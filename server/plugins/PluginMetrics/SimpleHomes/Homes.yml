@@ -1,0 +1,218 @@
+HydraBlaz3_TOPG1:
+  ms2:
+    world: world
+    X: 293.5095396193303
+    Y: 15.0
+    Z: 364.20265771612173
+  base:
+    world: world
+    X: 531.0527273538464
+    Y: 75.0
+    Z: 148.39017933726865
+  en:
+    world: world
+    X: 330.22900082396546
+    Y: 19.0
+    Z: 112.86203220273748
+  nf:
+    world: world_nether
+    X: -132.30000001192093
+    Y: 53.0
+    Z: 341.69999998807907
+  e:
+    world: world
+    X: -292.69999998807907
+    Y: 3.0
+    Z: 552.6999999880791
+_____qwerty:
+  spawner:
+    world: world
+    X: 310.94027009301755
+    Y: 20.0
+    Z: 317.3245748690638
+  sky:
+    world: world
+    X: 135.9251228030585
+    Y: 254.0
+    Z: 73.72563436696555
+  hydra:
+    world: world
+    X: 532.6163074368544
+    Y: 70.0
+    Z: 148.69999998807907
+France_is_better:
+  mines:
+    world: world
+    X: 293.17876100359223
+    Y: 11.0
+    Z: 214.5937195834954
+  spawn:
+    world: world
+    X: 213.4967675839923
+    Y: 68.0
+    Z: 106.90360331293145
+  base:
+    world: world
+    X: 530.9609716864471
+    Y: 75.0
+    Z: 146.41882931434526
+  secret:
+    world: world
+    X: 340.5416920983471
+    Y: 11.0
+    Z: -133.5877585776053
+ColdFronts:
+  _____qwerty:
+    world: world
+    X: -188.7938109586099
+    Y: 83.0
+    Z: 390.882599589739
+  water:
+    world: world
+    X: -92.30000001192093
+    Y: 79.0
+    Z: 396.28209990700964
+  xpfarm:
+    world: world
+    X: -292.69999998807907
+    Y: 4.0
+    Z: 548.1726696951112
+  dd:
+    world: world
+    X: 119.37805400518921
+    Y: 82.0
+    Z: 88.1447100797642
+  spawn:
+    world: world
+    X: 168.5
+    Y: 69.0
+    Z: 224.5
+Nuclear_Human:
+  base:
+    world: world
+    X: -182.30000001192104
+    Y: 76.0
+    Z: 431.69999998807924
+  op:
+    world: world
+    X: 132.02618284422292
+    Y: 254.0
+    Z: 77.35237804610293
+Eclipsesdawn018:
+  surface:
+    world: world
+    X: 1140.4876683152722
+    Y: 63.0
+    Z: 211.57278597973726
+  blaze:
+    world: world_nether
+    X: -125.11841025679901
+    Y: 53.0
+    Z: 338.50360132105817
+  cows:
+    world: world
+    X: 1235.7177465434143
+    Y: 75.0
+    Z: -194.11773298139423
+  base:
+    world: world
+    X: 1168.5843638500905
+    Y: 11.0
+    Z: 5.5402721138841295
+  furance:
+    world: world
+    X: 1133.0488718543832
+    Y: 56.0
+    Z: 243.52560639615507
+scarym:
+  jason:
+    world: world
+    X: 374.30000001192093
+    Y: 10.0
+    Z: 102.69999998807907
+  mine:
+    world: world
+    X: 371.4083992921288
+    Y: 7.0
+    Z: 179.02590648194192
+  base:
+    world: world
+    X: 370.30000001192093
+    Y: 16.0
+    Z: 79.83485707890026
+  water:
+    world: world
+    X: 190.9717802554738
+    Y: 64.0
+    Z: 26.696632201554834
+Fazbear:
+  as:
+    world: world
+    X: 381.30000001192093
+    Y: 10.0
+    Z: 116.19536086595278
+Kaboom_:
+  chest:
+    world: world
+    X: 122.5769955364966
+    Y: 79.0
+    Z: 369.6298854222628
+  nether:
+    world: world_nether
+    X: 45.405178875432874
+    Y: 36.0
+    Z: 1.1663810759223983
+  Jason:
+    world: world
+    X: 331.09751421131125
+    Y: 11.0
+    Z: 123.44707139020038
+  scart:
+    world: world
+    X: 368.4058129226931
+    Y: 16.0
+    Z: 76.71887494525562
+LordOfPancakes:
+  fortress:
+    world: world_nether
+    X: 67.77452406509362
+    Y: 77.0
+    Z: 78.62216523492057
+  fortress2:
+    world: world_nether
+    X: -195.80794122623982
+    Y: 60.0
+    Z: 326.260162573215
+  cave:
+    world: world
+    X: -366.61864899180296
+    Y: 13.0
+    Z: 648.6286475810315
+  land:
+    world: world
+    X: -418.82431523949214
+    Y: 87.0
+    Z: 606.9427499082136
+StickmanNews:
+  Moon_Base_2:
+    world: world
+    X: 309.55479334404885
+    Y: 21.0
+    Z: 315.30000001192093
+  Moon_Base_2ndDimension:
+    world: world_nether
+    X: 72.10325405027059
+    Y: 77.0
+    Z: 101.13371461844798
+CoolSnowManPRO:
+  home:
+    world: world
+    X: 329.01128376886663
+    Y: 19.0
+    Z: 94.96749074365448
+meepcat2022:
+  meepcat2022:
+    world: world
+    X: 370.68820528366473
+    Y: 16.0
+    Z: 78.21184774013432

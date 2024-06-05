@@ -1,0 +1,16 @@
+DisallowedItems:
+  Bedrock: true
+  BarrierBlock: true
+  ShulkerBox: true
+  DragonEgg: true
+  TotemOfUndying: true
+  NetherStar: true
+  WitherSkulls: true
+  EndCrystals: true
+  EnchantedGoldenApples: true
+  Diamond: true
+  DiamondBlock: true
+  NetheriteIngot: true
+  NetheriteBlock: true
+  Emerald: true
+  EnchantedBook: false

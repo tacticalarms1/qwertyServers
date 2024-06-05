@@ -1,0 +1,28 @@
+#		 #
+# CONFIG #
+#		 #
+
+options:
+	cancelmessage: &cHey! Just enjoy the game, no need to snoop!
+	permission: command.disabler.bypass
+
+#						 				#
+# YOU CAN ADD MORE COMMANDS IN THE LIST #
+#						 				#		
+
+on load:
+	delete {disabledcommands::*}
+	add "plugins", "plugin", "pl", "?", "icanhasbukkit", "Bukkit:plugins", "Bukkit:plugin", "Bukkit:pl", "Bukkit:help", "Bukkit:?", and "Bukkit:icanhasbukkit" to {disabledcommands::*}
+
+#																   #
+# REMOVE [ send "{@cancelmessage}" ] IF YOU WANT NO CANCEL MESSAGE #
+#																   #
+
+on command:
+	if {disabledcommands::*} contains command:
+		if player doesn't have permission "{@permission}":
+			send "{@cancelmessage}"
+			cancel event
+
+		
+		

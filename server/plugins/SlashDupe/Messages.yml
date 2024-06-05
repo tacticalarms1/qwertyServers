@@ -1,0 +1,8 @@
+DupeOutputs:
+  CannotDupeItem: '&cThis item is not allowed to be duplicated.'
+  ItemDupeSuccessfulInInv: '&3Item has been successfully duplicated. Check your inventory.'
+  ItemDupeSuccessfulInHand: '&3Item has been successfully duplicated.'
+  NotEnoughSpace: '&cPlease clear some space in your inventory before attempting to
+    duplicate this item.'
+  ReloadMessage: '&3All config files have been reloaded'
+  NoPermissionMessage: '&cYou don''t have permission to do that.'

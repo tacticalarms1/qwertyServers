@@ -1,0 +1,30 @@
+bounty:
+  claim:
+    message: '%h has claimed %t''s bounty!'
+  raise:
+    loud: '%h has raised %t''s bounty!'
+    silent: A player has raised %t's bounty!
+    denied: Some items were returned to you because they are not allowed as bounties!
+    title: Raise %t's bounty
+  reward:
+    filter:
+      title: Reward Filters
+  actives:
+    title: Active Bounties
+  display:
+    title: Bounty Rewards
+    view: Click here to view this bounty
+  reset:
+    broadcast: '%t''s bounty has been reset!'
+    user: Your bounty has been reset!
+command:
+  usage: '§cUsage: '
+  playernotfound: §cThat player could not be found.
+  nobounty: §cCould not find an active bounty for that player.
+  ownbounty: You can't raise your own bounty!
+button:
+  confirm: §eConfirm
+  cancel: §cCancel
+  back: §bGo Back
+  next: §bNext Page
+  previous: §bPrevious Page

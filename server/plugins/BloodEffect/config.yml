@@ -1,0 +1,6 @@
+# Plugin Name: BloodEffect.jar
+# Plugin Version: 3.0.3
+# Plugin Author: UrageX
+
+player: true
+mobs: true

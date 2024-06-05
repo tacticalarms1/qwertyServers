@@ -1,0 +1,86 @@
+# -------------------------- #
+#        PixelBlood          #
+#            By              #
+#        MythicGhoul         #
+# -------------------------- #
+
+Version: 2.5
+Player:
+  Enabled: true
+  BloodType: REDSTONE_BLOCK
+BloodSpray: true
+Passive-Mobs:
+  Enabled: true
+Neutral-Mobs:
+  Enabled: true
+Hostile-Mobs:
+  Enabled: true
+Boss-Mobs:
+  Enabled: true
+Mob-Blood:
+  Cooldown: 20
+Life-Essence:
+  Chance: 0.3
+Soul-Flask:
+  Chance: 0.15
+FriendlyMobs:
+  Bat: REDSTONE_BLOCK
+  Cat: REDSTONE_BLOCK
+  Chicken: REDSTONE_BLOCK
+  Cod: REDSTONE_BLOCK
+  Cow: REDSTONE_BLOCK
+  Donkey: REDSTONE_BLOCK
+  Fox: REDSTONE_BLOCK
+  Horse: REDSTONE_BLOCK
+  Mule: REDSTONE_BLOCK
+  Ocelot: REDSTONE_BLOCK
+  Parrot: REDSTONE_BLOCK
+  Pig: REDSTONE_BLOCK
+  PolarBear: REDSTONE_BLOCK
+  PufferFish: REDSTONE_BLOCK
+  Rabbit: REDSTONE_BLOCK
+  Salmon: REDSTONE_BLOCK
+  Sheep: REDSTONE_BLOCK
+  Squid: REDSTONE_BLOCK
+  Strider: REDSTONE_BLOCK
+  TropicalFish: REDSTONE_BLOCK
+  Turtle: REDSTONE_BLOCK
+  Villager: REDSTONE_BLOCK
+  WanderingTrader: REDSTONE_BLOCK
+IdleMobs:
+  Bee: REDSTONE_BLOCK
+  Dolphin: REDSTONE_BLOCK
+  Enderman: REDSTONE_BLOCK
+  Goat: REDSTONE_BLOCK
+  Llama: REDSTONE_BLOCK
+  Panda: REDSTONE_BLOCK
+  TraderLlama: REDSTONE_BLOCK
+  Wolf: REDSTONE_BLOCK
+  PigZombie: REDSTONE_BLOCK
+EnemyMobs:
+  Blaze: REDSTONE_BLOCK
+  Creeper: REDSTONE_BLOCK
+  Drowned: REDSTONE_BLOCK
+  CaveSpider: REDSTONE_BLOCK
+  Endermite: REDSTONE_BLOCK
+  Evoker: REDSTONE_BLOCK
+  Ghast: REDSTONE_BLOCK
+  Guardian: REDSTONE_BLOCK
+  Hoglin: REDSTONE_BLOCK
+  Husk: REDSTONE_BLOCK
+  MagmaCube: REDSTONE_BLOCK
+  Phantom: REDSTONE_BLOCK
+  Piglin: REDSTONE_BLOCK
+  Pillager: REDSTONE_BLOCK
+  Ravager: REDSTONE_BLOCK
+  Shulker: REDSTONE_BLOCK
+  SilverFish: REDSTONE_BLOCK
+  Skeleton: REDSTONE_BLOCK
+  Slime: REDSTONE_BLOCK
+  Stray: REDSTONE_BLOCK
+  Vex: REDSTONE_BLOCK
+  Vindicator: REDSTONE_BLOCK
+  Witch: REDSTONE_BLOCK
+  WitherSkeleton: REDSTONE_BLOCK
+  Zombie: REDSTONE_BLOCK
+  Spider: REDSTONE_BLOCK

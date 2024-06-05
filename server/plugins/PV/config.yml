@@ -1,0 +1,16 @@
+EnchantClickedItems: true
+Annotations!:
+- '{PLAYER} returns the Player who submitted the command'
+- '{OPLAYER} returns the Player whos vault is opening'
+- '{VAULT} returns the vault number'
+NoAccessToGUIMessage: '&c&lYou Don''t Have Access To Use This!'
+SelectorOpenMessage: '&bOpening &7: &3Selector...'
+Selector-Name: '&b&lSelector'
+GUI-Name: '&b&lPlayerVault &3&l{VAULT}'
+KickIf2PvsOpenAtOnce: false
+2PvKickMessage: '&c&lYou cannot open more than 1 PV At the Same Time'
+NoAccessToPvMessage: '&aUse /buy to buy a rank with more PVS!'
+CheckForMovement: true
+OtherVaultDeny: '&cYou do not have permission to open another players vault!'
+OtherVault: '&bOpening {OPLAYER}''s Vault &7: &3{VAULT}...'
+VaultOpenMessage: '&bOpening Vault &7: &3{VAULT}...'

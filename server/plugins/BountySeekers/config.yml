@@ -1,0 +1,7 @@
+general:
+  commands:
+    truly-silent-raise: false
+  formatting:
+    broacast-prefix-colour: '&c'
+    broacast-brackets-colour: '&7'
+    broacast-text-colour: '&e'

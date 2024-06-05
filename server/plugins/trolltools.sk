@@ -1,0 +1,273 @@
+#=============================
+# TrollTools Skript v3.8
+#  By DinPro
+#=============================
+
+options:
+# Version - do not change
+	version: 3.8
+# Prefix
+	prefix: <##ff03f2>TrollTools &7>>
+# Permission for troll commands
+	permission: troll.admin
+# Permission denied message
+	permissionmsg: &cYou are missing the permission &ftroll.admin&c!
+
+command /trolltools <text> [<text>]:
+	usage: <##dba512>/trolltools help
+	aliases: /tt
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is "help":
+			if arg-2 isn't set:
+				send "&f---------------<##ff03f2>Help Page 1/2&f---------------"
+				send "<##ff03f2>"
+				send "<##ff03f2>/trolltools admin &fShows all the admin commands"
+				send "<##ff03f2>/launch <player> &fLaunches the player upwards"
+				send "<##ff03f2>/explode <player> &fCreate a fake explosion"
+				send "<##ff03f2>/push <player>  &fPushes the player downwards"
+				send "<##ff03f2>/rocket <player> &fRocket someone in the air"
+				send "<##ff03f2>/ignite <player> &fSet the player on fire"
+				send "<##ff03f2>/poison <player> &fPoison the player"
+				send "<##ff03f2>/fakeop <player> &fFakeOP someone"
+				send "<##ff03f2>/smite <player> &fStrike lightning at someone"
+				send "<##ff03f2>"
+				send "&f---------------<##ff03f2>Help Page 1/2&f---------------"
+				exit
+		if arg 1 is "help":
+			if arg-2 is "2":
+				send "&f---------------<##ff03f2>Help Page 2/2&f---------------"
+				send "<##ff03f2>"
+				send "<##ff03f2>/blind <player> &fBlind Someone"
+				send "<##ff03f2>/disenchant <player> &fDisenchant a players tool"
+				send "<##ff03f2>/spam <player> &fSpams the player with a MSG"
+				send "<##ff03f2>/coolkick <player> &fKick a Player in Style!" 
+				send "<##ff03f2>/chatfreeze <player> &fChat Freeze someone"
+				send "<##ff03f2>/chatunfreeze <player> &fChat UnFreeze someone"
+				send "<##ff03f2>/smitespam <player> &fSpam someone with /smite"
+				send "<##ff03f2>/nuke <player> &fCreate a huge explosion at someones location"
+				send "<##ff03f2>/soundspam <player> &fPlay annoying sounds to someone"
+				send "<##ff03f2>"
+				send "&f---------------<##ff03f2>Help Page 2/2&f---------------"
+				exit
+		if arg 1 is "admin":
+			send "&f&m---------------------------------"
+			send "<##ff03f2>/trolltools admin &fShows this Help menu"
+			send "<##ff03f2>/trolltools reload &fReloads the Skript"				
+			send "<##ff03f2>/trolltools version &fShows the Version of the Skript"
+			send "&f&m---------------------------------"
+			exit
+		if arg 1 is "reload":
+			make player execute command "/sk reload trolltools"
+			exit
+		if arg 1 is "version":
+			send "{@prefix} &fYou are currently running <##ff03f2>TrollTools &fon the version <##ff03f2>{@version}"
+			exit 
+
+command /launch <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			loop 7 times:
+				push arg-1 upwards
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /nuke <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			loop 7 times:
+				create an explosion of force 70 at location of arg-1
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+	
+command /push <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			loop 7 times:
+				push arg-1 downwards
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /explode <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			loop 5 times:
+				create a fake explosion at arg 1
+		send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /rocket <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			broadcast "<##dba512>Troll &7> <##dba512>Launching %arg 1% in 5..."
+			wait 1 second
+			broadcast "<##dba512>Troll &7> <##dba512>Launching %arg 1% in 4..."
+			wait 1 second
+			broadcast "<##dba512>Troll &7> <##dba512>Launching %arg 1% in 3..."
+			wait 1 second
+			broadcast "<##dba512>Troll &7> <##dba512>Launching %arg 1% in 2..."
+			wait 1 second
+			broadcast "<##dba512>Troll &7> <##dba512>Launching %arg 1% in 1..."
+			broadcast "<##dba512>Troll &7> <##dba512>%arg 1% &cLAUCNHED!!!"
+			loop 3 times:
+				create a fake explosion at arg 1
+			loop 20 times:
+				push arg-1 upwards
+			wait 1 second
+			broadcast "<##dba512>Troll &7> &cERROR ERROR, SOMETHING WENT WRONG..."
+			wait 1 second
+			broadcast "<##dba512>Troll &7> &cSYSTEM CRASHED..."
+			wait 2 seconds
+			create a fake explosion at arg 1
+			kill arg 1
+
+command /ignite  <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			ignite arg 1
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /poison <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			poison arg 1 for 5 seconds
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /fakeop <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			message "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			send "&7&o[Server: &7&oMade &7&o%arg-1% &7&oa server operator]" to arg-1
+
+command /smite <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			strike lightning at arg 1
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /blind <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			apply blindness to arg 1 for 10 seconds
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+
+command /disenchant <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			disenchant the player's tool
+
+command /spam <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			message "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second	
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second	
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second	
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second	
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second	
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second	
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait 3 seconds
+			loop 20 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait 2 seconds	
+			loop 50 times:
+				send "&CSOMETHING IS WRONG WITH YOUR MINECRAFT PLEASE RESTART" to arg 1
+			wait a second				
+
+command /coolkick <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			if arg 1 is online:
+				if player has permission "troll.admin":
+					send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+					kick arg 1 due to "&f%player% &fTrolled you :D"
+
+command /chatfreeze <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			set {chat.%arg-1%} to true
+
+command /chatunfreeze <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			send "{@prefix} &fUnTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			set {chat.%arg-1%} to false
+
+command /soundspam <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
+			loop 10 times:
+				play sound "entity.ender_dragon.growl" with volume 10 to player
+			wait 3 seconds
+			loop 10 times:
+				play sound "entity.bat.death" with volume 10 to player
+			wait 15 seconds
+			loop 10 times:
+				play sound "entity.enderman.scream" with volume 10 to player
+				
+on chat:
+	if {chat.%player%} is true:
+		cancel event
+		
+on join:
+	if {chat.%player%} isn't set:
+		set {chat.%player%} to false
+		
+command /smitespam <player>:
+	permission: {@permission}
+	permission message: {@permissionmsg}
+	trigger:
+		if arg 1 is a player:
+			loop 30 times:
+				strike lightning at arg 1
+			send "{@prefix} &fTrolled <##ff03f2>%arg-1% &fSuccessfully!"
